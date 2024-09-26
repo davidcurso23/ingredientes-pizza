@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background: url("../img/fondo.jpg") no-repeat center/cover;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+  width: 80vh;
+  max-width: 600px;
+  gap: 20px;
+}
+
+#lista-ingredientes {
+  background-color: white;
+  margin-top: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.pizza {
+  background-color: white;
+  width: 50%;
+  border-radius: 20px;
+  min-height: 80vh;
+  padding: 20px;
+}
+
+.listaPizza {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ingrediente {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: brown;
+  padding: 20px 10px;
+  list-style: none;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.ingrediente:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.ingredienteDeLista {
+  border-bottom: solid 1px gray;
+  color: tomato;
+  font-size: 20px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
